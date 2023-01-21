@@ -159,7 +159,8 @@ background-color: #101010;
 
 .hero {
 display:flex;
-    position: relative;
+position: relative;
+text-align: center;
 background:linear-gradient(to top, #00000088, #00000088), url(assets/SLCSkyline.jpg);
 background-size: var(--width);
 background-repeat: no-repeat;
