@@ -1,3 +1,6 @@
+:root{
+  --width:1920px;  
+}
 
 
 li {
@@ -152,4 +155,17 @@ background-color: #101010;
 .hoverbutton:hover span:after {
   opacity: 1;
   right: 0;
+}
+
+.hero {
+display:flex;
+    position: relative;
+background:linear-gradient(to top, #00000088, #00000088), url(assets/SLCSkyline.jpg);
+background-size: var(--width);
+background-repeat: no-repeat;
+overflow:auto; 
+height: 400px ;
+background-position: center;
+
+    
 }
