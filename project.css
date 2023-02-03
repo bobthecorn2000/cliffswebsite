@@ -226,3 +226,7 @@ height: 400px ;
     width:250px;
     
 }
+form {
+    display:flex;
+    justify-content: center;
+}
