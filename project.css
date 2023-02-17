@@ -15,7 +15,7 @@
     }
 
 
-@media screen and (max-width:890px) {
+@media screen and (max-width:1228px) {
     body .divtext {
        margin:1px 1px; 
     }
@@ -23,6 +23,34 @@
 font-size:15px;
         
 }
+    body .subgraph {
+    display: grid;
+     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2,1fr)
+}
+    
+    
+body .subgraph1{
+     grid-column: 1;
+  grid-row: 1;
+}
+body .subgraph2{
+    grid-column: 2;
+  grid-row: 1;
+}
+body .subgraph3{
+    grid-column: 1;
+  grid-row: 2;
+}
+body .subgraph4{
+    grid-column: 2;
+  grid-row: 2;
+}
+    
+    
+    
+    
+    
 }
 
 @media screen and (max-width: 600px) {
@@ -37,7 +65,12 @@ font-size:15px;
     display: block;
     text-align: left;
   }
-    
+    body .logo {
+        display:none;
+    }
+     body .subgraph {
+    display: inline;
+}
 }
 
 
@@ -62,9 +95,12 @@ li a:hover {
 }
 body {
     background-color: whitesmoke;
+    margin:0px; padding:0px;
+    overflow-x: auto;
 }
 .logo {
     align-self: flex-start;
+    width:500px;
 }
 h1 {
     color: black;
@@ -211,15 +247,18 @@ height: 400px ;
 }
 
 .subgraph {
-    display: flex;
-    justify-content: center;
-     
+    display: grid;
+   /* justify-content: center; */
+     grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1,1fr);
 }
 .subgraph > div {
-  background-color: #f1f1f1;
+  background-color: darkgray;
   margin: 10px;
   padding: 20px;
   font-size: 15px;
+    
+border-radius: 30px;
 }
 
 .gridimage{
@@ -229,4 +268,24 @@ height: 400px ;
 form {
     display:flex;
     justify-content: center;
+}
+.subgraph1{
+     grid-column: 1;
+  grid-row: 1;
+}
+.subgraph2{
+    grid-column: 2;
+  grid-row: 1;
+}
+.subgraph3{
+    grid-column: 3;
+  grid-row: 1;
+}
+.subgraph4{
+    grid-column: 4;
+  grid-row: 1;
+}
+footer {
+    background-color:skyblue;
+    
 }

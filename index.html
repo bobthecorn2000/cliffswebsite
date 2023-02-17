@@ -9,10 +9,8 @@
 <body>
     
         <div class="topnav" id="myTopnav">
-  <img class="logo" src="assets/banner.png" alt="HEADER LOGO">
-            <a class="toplinks" href="#">null</a>
-            <a class="toplinks" href="#">null</a>
-            <a class="toplinks" href="#">null</a>
+  <img class="logo" src="assets/CFORSGREN_LOGO_TXT.png" alt="HEADER LOGO">
+            <a class="toplinks" onclick="openalert()">Contact Us</a>
 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
         </a>
@@ -31,10 +29,10 @@ To help individuals and families gain peace and prosperity through understanding
     
 <h1 class="headers">FOR BUSINESS OWNERS</h1>  
 <div class="subgraph">
-    <div><h1 style="text-align:center">Know your value</h1> <br> <p style="text-align:center"><img src="assets" alt="value"></p></div>
-  <div><h1 style="text-align:center">Identify and Mitigate your risk</h1><br><p style="text-align:center"><img class="gridimage" src="assets/risk.jpg" alt="risk"></p> </div>
-  <div><h1 style="text-align:center">Preperation</h1><br><p style="text-align:center"><img class="gridimage" src="assets/Preparation.jpg"></p> </div>
-    <div><h1 style="text-align:center">Execution</h1><br><p style="text-align:center"><img class="gridimage" src="assets/Execution.jpg"></p> </div>
+    <div class="subgraph1"><h1 style="text-align:center">Know your value</h1> <br> <p style="text-align:center"><img class="gridimage" src="assets/Valuation.jpg" alt="value"></p></div>
+  <div class="subgraph2"><h1 style="text-align:center">Identify and Mitigate your risk</h1><br><p style="text-align:center"><img class="gridimage" src="assets/risk.jpg" alt="risk"></p> </div>
+  <div class="subgraph3"><h1 style="text-align:center">Preperation</h1><br><p style="text-align:center"><img class="gridimage" src="assets/Preparation.jpg"></p> </div>
+    <div class="subgraph4"><h1 style="text-align:center">Execution</h1><br><p style="text-align:center"><img class="gridimage" src="assets/Execution.jpg"></p> </div>
     
 </div>    
 
@@ -42,20 +40,12 @@ To help individuals and families gain peace and prosperity through understanding
 <h1 class="headers">FOR INDIVIDUALS AND FAMILIES</h1>    
     
  <div class="subgraph">
-    <div><h1 style="text-align:center">Full replacement</h1> <br> <p style="text-align:center"><img src="assets" alt="risk"></p></div>
-  <div><h1 style="text-align:center">World class saver</h1><br><p style="text-align:center"><img class="gridimage" src="assets/save.jpg" alt="save"></p> </div>
-     <div><h1 style="text-align:center">Keep a stash of cash</h1><br><p style="text-align:center"><img class="gridimage" src="assets/Liquidity.jpg" alt="liquid"></p> </div>
-  <div><h1 style="text-align:center">Reasonable Mortgage</h1><br><p style="text-align:center"><img class="gridimage" src="assets/BoD.jpg"></p> </div>
+    <div class="subgraph1"><h1 style="text-align:center">Full replacement</h1> <br> <p style="text-align:center"><img class="gridimage" src="assets/Risk.jpg" alt="risk"></p></div>
+  <div class="subgraph2"><h1 style="text-align:center">World class saver</h1><br><p style="text-align:center"><img class="gridimage" src="assets/save.jpg" alt="save"></p> </div>
+     <div class="subgraph3"><h1 style="text-align:center">Keep a stash of cash</h1><br><p style="text-align:center"><img class="gridimage" src="assets/Liquidity.jpg" alt="liquid"></p> </div>
+  <div class="subgraph4"><h1 style="text-align:center">Reasonable Mortgage</h1><br><p style="text-align:center"><img class="gridimage" src="assets/BoD.jpg"></p> </div>
     
-</div>    
-    
-<h1 class="headers">CONTACT US</h1>
- <form action="contact.php" method="post">
-Name: <input type="text" name="name"><br>
-E-mail: <input type="text" name="email"><br>
-message: <input type="text" name="comment"><br>
-<input type="submit">   
-    </form>   
+</div>      
   <footer>
     <br>
     <br>
@@ -83,6 +73,12 @@ var width = screen.availWidth;
   } else {
     x.className = "topnav";
   }
+}
+function openalert() {
+    if (confirm("Pressing ok will open up your inbox")) {
+    window.location.href = "mailto:cliff@engineeredfinancialsolutionsutah.com" 
+    
+    }
 }
 </script>
 </body>
